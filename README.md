@@ -1,230 +1,195 @@
-# Turndown
+---
+title: The Internet Is Too Unsafe: We Need More Hackers
+date: 2020-06-27T22:37:09.173Z
+description: A Letter from a Web Developer
+---
 
-[![Build Status](https://travis-ci.org/domchristie/turndown.svg?branch=master)](https://travis-ci.org/domchristie/turndown)
+## **ADVANCING PRIVACY**
 
-Convert HTML into Markdown with JavaScript.
+# **The Internet Is Too Unsafe: We Need More Hackers**
 
-### to-markdown has been renamed to Turndown. See the [migration guide](https://github.com/domchristie/to-markdown/wiki/Migrating-from-to-markdown-to-Turndown) for details.
+## **A Letter from a Web Developer**
 
-## Installation
+[![Yakko Majuri](https://miro.medium.com/fit/c/96/96/1*nXgAXQZ1WUQv0gWFtaTwtg.png)](https://yakkomajuri.medium.com/?source=post_page-----c9742fc1a03b--------------------------------)
 
-npm:
+[Yakko Majuri](https://yakkomajuri.medium.com/?source=post_page-----c9742fc1a03b--------------------------------)
 
-```
-npm install turndown
-```
+Follow
 
-Browser:
+[Jun 27, 2020](/swlh/the-internet-is-too-unsafe-we-need-more-hackers-c9742fc1a03b?source=post_page-----c9742fc1a03b--------------------------------) · 7 min read
 
-```html
-<script src="https://unpkg.com/turndown/dist/turndown.js"></script>
-```
+[](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fc9742fc1a03b&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fswlh%2Fthe-internet-is-too-unsafe-we-need-more-hackers-c9742fc1a03b&source=post_actions_header--------------------------bookmark_preview-----------)
 
-For usage with RequireJS, UMD versions are located in `lib/turndown.umd.js` (for Node.js) and `lib/turndown.browser.umd.js` for browser usage. These files are generated when the npm package is published. To generate them manually, clone this repo and run `npm run build`.
+![](https://miro.medium.com/max/60/1*bkRkeMrlCS8dK2b3S09RHw.jpeg?q=20)
 
-## Usage
+<img alt="" class="t u v ic aj" src="https://miro.medium.com/max/10368/1\*bkRkeMrlCS8dK2b3S09RHw.jpeg" width="5184" height="3456" srcSet="https://miro.medium.com/max/552/1\*bkRkeMrlCS8dK2b3S09RHw.jpeg 276w, https://miro.medium.com/max/1104/1\*bkRkeMrlCS8dK2b3S09RHw.jpeg 552w, https://miro.medium.com/max/1280/1\*bkRkeMrlCS8dK2b3S09RHw.jpeg 640w, https://miro.medium.com/max/1456/1\*bkRkeMrlCS8dK2b3S09RHw.jpeg 728w, https://miro.medium.com/max/1632/1\*bkRkeMrlCS8dK2b3S09RHw.jpeg 816w, https://miro.medium.com/max/1808/1\*bkRkeMrlCS8dK2b3S09RHw.jpeg 904w, https://miro.medium.com/max/1984/1\*bkRkeMrlCS8dK2b3S09RHw.jpeg 992w, https://miro.medium.com/max/2160/1\*bkRkeMrlCS8dK2b3S09RHw.jpeg 1080w, https://miro.medium.com/max/2700/1\*bkRkeMrlCS8dK2b3S09RHw.jpeg 1350w, https://miro.medium.com/max/3240/1\*bkRkeMrlCS8dK2b3S09RHw.jpeg 1620w, https://miro.medium.com/max/3780/1\*bkRkeMrlCS8dK2b3S09RHw.jpeg 1890w, https://miro.medium.com/max/4320/1\*bkRkeMrlCS8dK2b3S09RHw.jpeg 2160w, https://miro.medium.com/max/4800/1\*bkRkeMrlCS8dK2b3S09RHw.jpeg 2400w" sizes="100vw" role="presentation"/>
 
-```js
-// For Node.js
-var TurndownService = require('turndown')
+Credits: Jefferson Santos
 
-var turndownService = new TurndownService()
-var markdown = turndownService.turndown('<h1>Hello world!</h1>')
-```
+**Edit (16/07/2020):** Twitter just got hacked big time. I stand by all my points in this article. [We still need more hackers.](/@yakko.majuri/twitter-just-got-hacked-i-still-think-we-need-more-hackers-c16a152b765b?source=friends_link&sk=f3dfc6a9c93092e3eb716e99b66d14d9)
 
-Turndown also accepts DOM nodes as input (either element nodes, document nodes,  or document fragment nodes):
+# Hacker Initiation
 
-```js
-var markdown = turndownService.turndown(document.getElementById('content'))
-```
+![](https://miro.medium.com/max/60/1*LX2VzpfgpZJu5KzgY6gADQ.jpeg?q=20)
 
-## Options
+<img alt="" class="t u v ic aj" src="https://miro.medium.com/max/12032/1\*LX2VzpfgpZJu5KzgY6gADQ.jpeg" width="6016" height="4000" srcSet="https://miro.medium.com/max/552/1\*LX2VzpfgpZJu5KzgY6gADQ.jpeg 276w, https://miro.medium.com/max/1104/1\*LX2VzpfgpZJu5KzgY6gADQ.jpeg 552w, https://miro.medium.com/max/1280/1\*LX2VzpfgpZJu5KzgY6gADQ.jpeg 640w, https://miro.medium.com/max/1400/1\*LX2VzpfgpZJu5KzgY6gADQ.jpeg 700w" sizes="700px" role="presentation"/>
 
-Options can be passed in to the constructor on instantiation. For example:
+Credits: Rohit Farmer
 
-```js
-var turndownService = new TurndownService({ option: 'value' })
-```
+> Are you interested in ethical hacking? If so, you might enjoy this [new tutorial](/@yakko.majuri/learning-the-internals-of-git-by-hacking-websites-c70c59303b12).
 
-| Option                | Valid values  | Default |
-| :-------------------- | :------------ | :------ |
-| `headingStyle`        | `setext` or `atx` | `setext`  |
-| `hr`                  | Any [Thematic break](http://spec.commonmark.org/0.27/#thematic-breaks) | `* * *` |
-| `bulletListMarker`    | `-`, `+`, or `*` | `*` |
-| `codeBlockStyle`      | `indented` or `fenced` | `indented` |
-| `fence`               | ` ``` ` or `~~~` | ` ``` ` |
-| `emDelimiter`         | `_` or `*` | `_` |
-| `strongDelimiter`     | `**` or `__` | `**` |
-| `linkStyle`           | `inlined` or `referenced` | `inlined` |
-| `linkReferenceStyle`  | `full`, `collapsed`, or `shortcut` | `full` |
-| `preformattedCode`    | `false` or [`true`](https://github.com/lucthev/collapse-whitespace/issues/16) | `false` |
+A while ago I stumbled upon a vulnerability on a website with millions of users.
 
-### Advanced Options
+Yeah, you heard that right: **stumbled upon.**
 
-| Option                | Valid values  | Default |
-| :-------------------- | :------------ | :------ |
-| `blankReplacement`    | rule replacement function | See **Special Rules** below |
-| `keepReplacement`     | rule replacement function | See **Special Rules** below |
-| `defaultReplacement`  | rule replacement function | See **Special Rules** below |
+The thing is, I’m not a hacker. Far from it — I’ve never tried to hack anything.
 
-## Methods
+I was browsing the website as usual and realized it had a potential vulnerability. And then I got scared, **really scared.**
 
-### `addRule(key, rule)`
+I knew enough about these things to know that:
 
-The `key` parameter is a unique name for the rule for easy reference. Example:
+a) What I found could _potentially_ be very dangerous for them
 
-```js
-turndownService.addRule('strikethrough', {
-  filter: ['del', 's', 'strike'],
-  replacement: function (content) {
-    return '~' + content + '~'
-  }
-})
-```
+b) A wrong move in possession of this knowledge could be problematic for me
 
-`addRule` returns the `TurndownService` instance for chaining.
+So I did what you’re supposed to do — I reported it. 4 times.
 
-See **Extending with Rules** below.
+The problem is: they did not have a [Responsible Disclosure Policy](https://www.bugcrowd.com/resource/what-is-responsible-disclosure/). This means there was no formal way for me to inform the team of this issue, and no guidelines on how they handle such disclosures.
 
-### `keep(filter)`
+That’s the scary part. Without such a policy, people who find vulnerabilities on a service, even if by accident, have to make a decision between their sense of moral responsibility and their own safety.
 
-Determines which elements are to be kept and rendered as HTML. By default, Turndown does not keep any elements. The filter parameter works like a rule filter (see section on filters belows). Example:
+Now, I don’t know if the flaw I found would have exposed sensitive data, but in theory, it could. I didn’t try to find out, that’s not up to me, and trying to go deeper can be a serious issue.
 
-```js
-turndownService.keep(['del', 'ins'])
-turndownService.turndown('<p>Hello <del>world</del><ins>World</ins></p>') // 'Hello <del>world</del><ins>World</ins>'
-```
+I found it, reported it, got the hell out of there, and proceeded to have a sleepless night — even though I had done nothing wrong.
 
-This will render `<del>` and `<ins>` elements as HTML when converted.
+# No Good Guys Allowed
 
-`keep` can be called multiple times, with the newly added keep filters taking precedence over older ones. Keep filters will be overridden by the standard CommonMark rules and any added rules. To keep elements that are normally handled by those rules, add a rule with the desired behaviour.
+![](https://miro.medium.com/max/60/1*u0HiwK8VxiVYVk9tDIss0w.jpeg?q=20)
 
-`keep` returns the `TurndownService` instance for chaining.
+<img alt="" class="t u v ic aj" src="https://miro.medium.com/max/13418/1\*u0HiwK8VxiVYVk9tDIss0w.jpeg" width="6709" height="4473" srcSet="https://miro.medium.com/max/552/1\*u0HiwK8VxiVYVk9tDIss0w.jpeg 276w, https://miro.medium.com/max/1104/1\*u0HiwK8VxiVYVk9tDIss0w.jpeg 552w, https://miro.medium.com/max/1280/1\*u0HiwK8VxiVYVk9tDIss0w.jpeg 640w, https://miro.medium.com/max/1400/1\*u0HiwK8VxiVYVk9tDIss0w.jpeg 700w" sizes="700px" role="presentation"/>
 
-### `remove(filter)`
+Credits: Dimitri Houtteman
 
-Determines which elements are to be removed altogether i.e. converted to an empty string. By default, Turndown does not remove any elements. The filter parameter works like a rule filter (see section on filters belows). Example:
+The story above has a happy ending.
 
-```js
-turndownService.remove('del')
-turndownService.turndown('<p>Hello <del>world</del><ins>World</ins></p>') // 'Hello World'
-```
+The company received my report, fixed it immediately, and thanked me for disclosing it.
 
-This will remove `<del>` elements (and contents).
+However, that’s not always how it goes. If you spend some time in online cybersecurity forums, you’ll find that often times vulnerabilities found by proper researchers will be ignored or go unreported for fear of retaliation from the company.
 
-`remove` can be called multiple times, with the newly added remove filters taking precedence over older ones. Remove filters will be overridden by the keep filters,  standard CommonMark rules, and any added rules. To remove elements that are normally handled by those rules, add a rule with the desired behaviour.
+Not having a Responsible Disclosure Policy or retaliating against well-intentioned white hat hackers (hackers that hack _for good_) is like having a sign in front of your establishment saying “No Good Guys Allowed”.
 
-`remove` returns the `TurndownService` instance for chaining.
+And where good guys aren’t allowed is where the bad guys like to hang out.
 
-### `use(plugin|array)`
+# Building a website is as easy as 1–2–3
 
-Use a plugin, or an array of plugins. Example:
+## (And so is hacking it)
 
-```js
-// Import plugins from turndown-plugin-gfm
-var turndownPluginGfm = require('turndown-plugin-gfm')
-var gfm = turndownPluginGfm.gfm
-var tables = turndownPluginGfm.tables
-var strikethrough = turndownPluginGfm.strikethrough
+![](https://miro.medium.com/max/60/1*e1A68TqcNkd4zQ5ch2Q92Q.jpeg?q=20)
 
-// Use the gfm plugin
-turndownService.use(gfm)
+<img alt="" class="t u v ic aj" src="https://miro.medium.com/max/8000/1\*e1A68TqcNkd4zQ5ch2Q92Q.jpeg" width="4000" height="2667" srcSet="https://miro.medium.com/max/552/1\*e1A68TqcNkd4zQ5ch2Q92Q.jpeg 276w, https://miro.medium.com/max/1104/1\*e1A68TqcNkd4zQ5ch2Q92Q.jpeg 552w, https://miro.medium.com/max/1280/1\*e1A68TqcNkd4zQ5ch2Q92Q.jpeg 640w, https://miro.medium.com/max/1400/1\*e1A68TqcNkd4zQ5ch2Q92Q.jpeg 700w" sizes="700px" role="presentation"/>
 
-// Use the table and strikethrough plugins only
-turndownService.use([tables, strikethrough])
-```
+Credits: Sereja Ris
 
-`use` returns the `TurndownService` instance for chaining.
+We’ve come a long way since the internet was invented, and now, almost anyone can have a website.
 
-See **Plugins** below.
+One can attain the necessary skills to build and launch a website for free in about a week. And if they don’t want to build it themselves, there’s a myriad options of services that will do it for you.
 
-## Extending with Rules
+**This is a great thing.**
 
-Turndown can be extended by adding **rules**. A rule is a plain JavaScript object with `filter` and `replacement` properties. For example, the rule for converting `<p>` elements is as follows:
+It’s awesome that we can now share our thoughts, advertise our products, and connect with others so easily, but it comes with a price.
 
-```js
-{
-  filter: 'p',
-  replacement: function (content) {
-    return '\n\n' + content + '\n\n'
-  }
-}
-```
+Just as building websites and software in general is becoming easier, so is hacking them.
 
-The filter selects `<p>` elements, and the replacement function returns the `<p>` contents separated by two new lines.
+I mean, we’ve all seen the reports of teenagers hacking into government organizations and big companies.
 
-### `filter` String|Array|Function
+This happens because what’s on the internet is available to anyone and everyone, and some people are bound to try to break it.
 
-The filter property determines whether or not an element should be replaced with the rule's `replacement`. DOM nodes can be selected simply using a tag name or an array of tag names:
+Anyone who has ever run a web server knows this. Your server will get hundreds, if not thousands, of [very weird requests](https://security.stackexchange.com/questions/40291/strange-requests-to-web-server) every day, including requests for stuff like PDFs about 1700s Russian History. These are all attempts to find just one mistake that will compromise the entire security of your website.
 
- * `filter: 'p'` will select `<p>` elements
- * `filter: ['em', 'i']` will select `<em>` or `<i>` elements
+Learning the skills to exploit simple yet damaging vulnerabilities is not extremely hard, and there are also a bunch of tools out there that scan these vulnerabilities for you **completely automatically.**
 
-Alternatively, the filter can be a function that returns a boolean depending on whether a given node should be replaced. The function is passed a DOM node as well as the `TurndownService` options. For example, the following rule selects `<a>` elements (with an `href`) when the `linkStyle` option is `inlined`:
+For less-elaborate exploits, hackers may as well setup the tools to search online for issues they can take advantage of and leave the house to grab a coffee. And they do.
 
-```js
-filter: function (node, options) {
-  return (
-    options.linkStyle === 'inlined' &&
-    node.nodeName === 'A' &&
-    node.getAttribute('href')
-  )
-}
-```
+As a result, we end up with news of various major hacks every year, some uncovering issues by major companies that are so trivial that even an intern should have been able to handle them.
 
-### `replacement` Function
+Examples include [XSS in Tweetdeck](https://www.theguardian.com/technology/2014/jun/11/twitter-tweetdeck-xss-flaw-users-vulnerable), [the iPhone Integer Underflow](https://www.theguardian.com/technology/2016/feb/12/setting-the-date-to-1-january-1970-will-brick-your-iphone-ipad-or-ipod-touch), [WhatsApp’s Black Dot](https://www.youtube.com/watch?v=jC4NNUYIIdM), [Lenovo shipping devices with Superfish malware](https://en.wikipedia.org/wiki/Superfish), [Adobe’s terrible password security](https://www.troyhunt.com/adobe-credentials-and-serious/), among many others.
 
-The replacement function determines how an element should be converted. It should return the Markdown string for a given node. The function is passed the node's content, the node itself, and the `TurndownService` options.
+Just last year, a hacker (or group) by the name GnosticPlayers [exposed almost **1** **billion** (yes, that’s a **b**) user records in just a few months](https://www.zdnet.com/article/a-hacker-has-dumped-nearly-one-billion-user-records-over-the-past-two-months/).
 
-The following rule shows how `<em>` elements are converted:
+Leaks and breaches are all around us.
 
-```js
-rules.emphasis = {
-  filter: ['em', 'i'],
+Data associated with my previous email, for example, has been leaked at least six times:
 
-  replacement: function (content, node, options) {
-    return options.emDelimiter + content + options.emDelimiter
-  }
-}
-```
+![](https://miro.medium.com/max/60/1*4vlanNsqR7Occbcmab9m5w.png?q=20)
 
-### Special Rules
+<img alt="" class="t u v ic aj" src="https://miro.medium.com/max/5760/1\*4vlanNsqR7Occbcmab9m5w.png" width="2880" height="1070" srcSet="https://miro.medium.com/max/552/1\*4vlanNsqR7Occbcmab9m5w.png 276w, https://miro.medium.com/max/1104/1\*4vlanNsqR7Occbcmab9m5w.png 552w, https://miro.medium.com/max/1280/1\*4vlanNsqR7Occbcmab9m5w.png 640w, https://miro.medium.com/max/1400/1\*4vlanNsqR7Occbcmab9m5w.png 700w" sizes="700px" role="presentation"/>
 
-**Blank rule** determines how to handle blank elements. It overrides every rule (even those added via `addRule`). A node is blank if it only contains whitespace, and it's not an `<a>`, `<td>`,`<th>` or a void element. Its behaviour can be customised using the `blankReplacement` option.
+You can try this yourself here: [https://haveibeenpwned.com/](https://haveibeenpwned.com/)
 
-**Keep rules** determine how to handle the elements that should not be converted, i.e. rendered as HTML in the Markdown output. By default, no elements are kept. Block-level elements will be separated from surrounding content by blank lines. Its behaviour can be customised using the `keepReplacement` option.
+There’s steps we can all individually take to help protect our data, and I recommend we all take them. I, for instance, am on a [privacy-craze](https://github.com/yakkomajuri/privacy-initiative) these past years.
 
-**Remove rules** determine which elements to remove altogether. By default, no elements are removed.
+However, there’s another (unlikely) solution to help diminish the number and impact of security breaches.
 
-**Default rule** handles nodes which are not recognised by any other rule. By default, it outputs the node's text content (separated  by blank lines if it is a block-level element). Its behaviour can be customised with the `defaultReplacement` option.
+# Embracing hackers as a solution
 
-### Rule Precedence
+![](https://miro.medium.com/max/60/1*sDXjilQCG524AqHuFSNR7A.jpeg?q=20)
 
-Turndown iterates over the set of rules, and picks the first one that matches the `filter`. The following list describes the order of precedence:
+<img alt="" class="t u v ic aj" src="https://miro.medium.com/max/12000/1\*sDXjilQCG524AqHuFSNR7A.jpeg" width="6000" height="4000" srcSet="https://miro.medium.com/max/552/1\*sDXjilQCG524AqHuFSNR7A.jpeg 276w, https://miro.medium.com/max/1104/1\*sDXjilQCG524AqHuFSNR7A.jpeg 552w, https://miro.medium.com/max/1280/1\*sDXjilQCG524AqHuFSNR7A.jpeg 640w, https://miro.medium.com/max/1400/1\*sDXjilQCG524AqHuFSNR7A.jpeg 700w" sizes="700px" role="presentation"/>
 
-1. Blank rule
-2. Added rules (optional)
-3. Commonmark rules
-4. Keep rules
-5. Remove rules
-6. Default rule
+Credits: Scott Webb
 
-## Plugins
+Believe it or not, a lot of the problems mentioned above could be solved by just embracing the hackers.
 
-The plugin API provides a convenient way for developers to apply multiple extensions. A plugin is just a function that is called with the `TurndownService` instance.
+For most of us, the term “hacker” still carries a negative connotation, but that’s a flawed perspective.
 
-## Escaping Markdown Characters
+If we work with the assumption that most people have good intentions, the same principle also applies to hackers.
 
-Turndown uses backslashes (`\`) to escape Markdown characters in the HTML input. This ensures that these characters are not interpreted as Markdown when the output is compiled back to HTML. For example, the contents of `<h1>1. Hello world</h1>` needs to be escaped to `1\. Hello world`, otherwise it will be interpreted as a list item rather than a heading.
+And indeed, there are white hat and black hat hackers — one is your worst enemy, but the other one should be your best friend.
 
-To avoid the complexity and the performance implications of parsing the content of every HTML element as Markdown, Turndown uses a group of regular expressions to escape potential Markdown syntax. As a result, the escaping rules can be quite aggressive.
+Black hat hackers are the ones we hear about in the news, on a segment about election meddling or a leak of user details from your favorite graphic design website.
 
-### Overriding `TurndownService.prototype.escape`
+However, on the other side of the spectrum are the white hat hackers. The good guys. These are “ethical hackers” that try to find vulnerabilities on websites not to exploit them, but to help services fix them and prevent a black hat hacker from finding them.
 
-If you are confident in doing so, you may want to customise the escaping behaviour to suit your needs. This can be done by overriding `TurndownService.prototype.escape`. `escape` takes the text of each HTML element and should return a version with the Markdown characters escaped.
+These hackers are probably one of the top reasons the internet is not completely insecure and still usable.
 
-Note: text in code elements is never passed to`escape`.
+But the problem is: we don’t support them enough.
 
-## License
+In this regard, Big Tech gets it. It’s one of the few things me and Big Tech are on the same page about. Facebook, Google, Amazon, Microsoft, and most other top technology firms all have a broad Responsible Disclosure / Bug Bounty program that pays well and protects white hat hackers.
 
-turndown is copyright © 2017+ Dom Christie and released under the MIT license.
+> “Find a way to hack into your local cafe’s website and you could go to jail. Find a way to hack into Facebook and you could become a millionaire.”
+
+Despite having massive Cybersecurity and InfoSec departments, these companies still realize the value of supporting the white hat hacker community for their own good.
+
+Some governments understand that too. [The Pentagon](https://www.hackerone.com/blog/hack-the-pentagon-results) has run programs for white hat hackers, as well as the [UK’s Ministry of Justice](https://mojdigital.blog.gov.uk/vulnerability-disclosure-policy/), to name a few.
+
+What they realize, is that security is always a tradeoff between the marginal cost of patching the next vulnerability and the presumed marginal benefit from doing so. This is why we have 2m high walls surrounding our houses, not 20m ones. The cost would be too high for only a minor **marginal** improvement in safety.
+
+In other words, it’s impossible to make your service 100% secure, so you need to allocate your limited resources accordingly and prioritize what vulnerabilities to fix, assuming you could even know them all.
+
+What you can then do is open your service up for the public scrutiny of the world and reward them for helping you secure areas of your service you couldn’t find or don’t have enough resources to fix yourself.
+
+Everyone wins.
+
+Websites like [HackerOne](https://hackerone.com/) or [Bugcrowd](https://bugcrowd.com/) allow companies to easily launch a robust Responsible Disclosure program and help companies identify critical issues in their products and services.
+
+And what’s more: many of the companies don’t even offer monetary rewards. Hackers will often spend hours or days testing services for free, only for the intellectual challenge, the possibility of winning a T-Shirt, or maybe being named on the company’s website.
+
+Not everyone can afford the hundreds of thousands of dollars a year necessary to run a reasonable Cybersecurity department. But every website owner can afford a [security.txt file](https://securitytxt.org/) and encourage white hat hacking on their website.
+
+Our increased focus on building digital products coupled with a lack of investment into cybersecurity and a marginalization of white hat hackers harms everyone.
+
+It means those who are skilled hackers are more likely to tip over to “the dark side” due to a lack of support, as well as those considering a career in ethical hacking may be forced to think twice.
+
+The gap in the cybersecurity jobs market is [already in the millions and growing fast](https://www.forbes.com/sites/martenmickos/2019/06/19/the-cybersecurity-skills-gap-wont-be-solved-in-a-classroom/#331b70761c30), and I can completely understand why.
+
+Ask me today: “Would you wanna be an ethical hacker?”
+
+And my answer would be:
+
+“Fuck that — I’d rather sleep at night”.
+
+# Author’s Note ✍️
+
+Thanks for reading! If you believe this article was useful, feel free to support me with some claps 👏👏.
+
+If you’re interested in Cybersecurity and Ethical Hacking, you might also enjoy a technical tutorial written as a follow-up to this article: [**Learn The Internals Of Git By Hacking A Website**](https://levelup.gitconnected.com/learning-the-internals-of-git-by-hacking-websites-c70c59303b12)**.**
